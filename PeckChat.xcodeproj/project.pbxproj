@@ -3,27 +3,78 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5936F61D6E7A89E2ACB658 /* libPods-PeckChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C056A29A5DE885329B05F67B /* libPods-PeckChat.a */; };
 		734183DB23FE2A6B004C796A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734183DA23FE2A6B004C796A /* AppDelegate.swift */; };
 		734183DD23FE2A6B004C796A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734183DC23FE2A6B004C796A /* SceneDelegate.swift */; };
-		734183DF23FE2A6B004C796A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734183DE23FE2A6B004C796A /* ViewController.swift */; };
 		734183E223FE2A6B004C796A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734183E023FE2A6B004C796A /* Main.storyboard */; };
 		734183E423FE2A6D004C796A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734183E323FE2A6D004C796A /* Assets.xcassets */; };
 		734183E723FE2A6D004C796A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734183E523FE2A6D004C796A /* LaunchScreen.storyboard */; };
+		734183EF23FE2D3E004C796A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 734183EE23FE2D3E004C796A /* GoogleService-Info.plist */; };
+		734183F923FE32FE004C796A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734183F823FE32FE004C796A /* Login.storyboard */; };
+		734183FB23FE33EF004C796A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734183FA23FE33EF004C796A /* LoginViewController.swift */; };
+		7341840324039F0A004C796A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7341840224039F0A004C796A /* User.swift */; };
+		734184052403A77B004C796A /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734184042403A77B004C796A /* CreateUsernameViewController.swift */; };
+		734184072403B7CB004C796A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734184062403B7CB004C796A /* UserService.swift */; };
+		7341840924045742004C796A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7341840824045742004C796A /* Constants.swift */; };
+		7341840B240457FA004C796A /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7341840A240457FA004C796A /* Storyboard+Utility.swift */; };
+		7341840F24047C42004C796A /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7341840E24047C42004C796A /* FindFriendsViewController.swift */; };
+		7341841124047CC0004C796A /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7341841024047CC0004C796A /* ChatListViewController.swift */; };
+		734184132404887D004C796A /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734184122404887D004C796A /* Chat.swift */; };
+		734184152404891E004C796A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734184142404891E004C796A /* Message.swift */; };
+		7341841724048BB7004C796A /* FriendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7341841624048BB7004C796A /* FriendService.swift */; };
+		73418419240490E2004C796A /* FriendRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73418418240490E2004C796A /* FriendRequestService.swift */; };
+		737A6DD02424028B0070B030 /* ViewFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A6DCF2424028B0070B030 /* ViewFriendsCell.swift */; };
+		7384DEA624159E43003F5A31 /* FriendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7384DEA524159E43003F5A31 /* FriendRequestViewController.swift */; };
+		7384DEA8241988F5003F5A31 /* FriendRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7384DEA7241988F5003F5A31 /* FriendRequestCell.swift */; };
+		73AD83B02425C76A006C2658 /* NewChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD83AF2425C76A006C2658 /* NewChatViewController.swift */; };
+		73AD83B22425C991006C2658 /* NewChatUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD83B12425C991006C2658 /* NewChatUserCell.swift */; };
+		73AD83B42425CF2F006C2658 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD83B32425CF2F006C2658 /* ChatViewController.swift */; };
+		73ADF1AE240739F500B12CB0 /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADF1AD240739F500B12CB0 /* FindFriendsCell.swift */; };
+		73ADF1B02410964700B12CB0 /* ViewFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADF1AF2410964700B12CB0 /* ViewFriendsController.swift */; };
+		73DCB6292425B2990099651D /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCB6282425B2990099651D /* ChatService.swift */; };
+		73DCB62B2425C4380099651D /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCB62A2425C4380099651D /* ChatListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1946768BFBE271146FA5D5C0 /* Pods-PeckChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeckChat.debug.xcconfig"; path = "Target Support Files/Pods-PeckChat/Pods-PeckChat.debug.xcconfig"; sourceTree = "<group>"; };
+		1AAE67EB6F28B8DAEF87FD6B /* Pods-PeckChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeckChat.release.xcconfig"; path = "Target Support Files/Pods-PeckChat/Pods-PeckChat.release.xcconfig"; sourceTree = "<group>"; };
 		734183D723FE2A6B004C796A /* PeckChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeckChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		734183DA23FE2A6B004C796A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		734183DC23FE2A6B004C796A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		734183DE23FE2A6B004C796A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		734183E123FE2A6B004C796A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		734183E323FE2A6D004C796A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		734183E623FE2A6D004C796A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		734183E823FE2A6D004C796A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		734183EE23FE2D3E004C796A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		734183F823FE32FE004C796A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		734183FA23FE33EF004C796A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		734183FF24038966004C796A /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7341840224039F0A004C796A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		734184042403A77B004C796A /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		734184062403B7CB004C796A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		7341840824045742004C796A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7341840A240457FA004C796A /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
+		7341840E24047C42004C796A /* FindFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
+		7341841024047CC0004C796A /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		734184122404887D004C796A /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		734184142404891E004C796A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7341841624048BB7004C796A /* FriendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendService.swift; sourceTree = "<group>"; };
+		73418418240490E2004C796A /* FriendRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestService.swift; sourceTree = "<group>"; };
+		737A6DCF2424028B0070B030 /* ViewFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFriendsCell.swift; sourceTree = "<group>"; };
+		7384DEA524159E43003F5A31 /* FriendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestViewController.swift; sourceTree = "<group>"; };
+		7384DEA7241988F5003F5A31 /* FriendRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestCell.swift; sourceTree = "<group>"; };
+		73AD83AF2425C76A006C2658 /* NewChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatViewController.swift; sourceTree = "<group>"; };
+		73AD83B12425C991006C2658 /* NewChatUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatUserCell.swift; sourceTree = "<group>"; };
+		73AD83B32425CF2F006C2658 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		73ADF1AD240739F500B12CB0 /* FindFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsCell.swift; sourceTree = "<group>"; };
+		73ADF1AF2410964700B12CB0 /* ViewFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFriendsController.swift; sourceTree = "<group>"; };
+		73DCB6282425B2990099651D /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		73DCB62A2425C4380099651D /* ChatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		C056A29A5DE885329B05F67B /* libPods-PeckChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PeckChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +82,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5936F61D6E7A89E2ACB658 /* libPods-PeckChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F1A99B6CE0EE5A46C540BB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1946768BFBE271146FA5D5C0 /* Pods-PeckChat.debug.xcconfig */,
+				1AAE67EB6F28B8DAEF87FD6B /* Pods-PeckChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		185BBD04C75E99CD2A391C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				734183FF24038966004C796A /* GTMSessionFetcher.framework */,
+				C056A29A5DE885329B05F67B /* libPods-PeckChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		734183CE23FE2A6B004C796A = {
 			isa = PBXGroup;
 			children = (
 				734183D923FE2A6B004C796A /* PeckChat */,
 				734183D823FE2A6B004C796A /* Products */,
+				0F1A99B6CE0EE5A46C540BB7 /* Pods */,
+				185BBD04C75E99CD2A391C0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +128,102 @@
 		734183D923FE2A6B004C796A /* PeckChat */ = {
 			isa = PBXGroup;
 			children = (
+				734183E823FE2A6D004C796A /* Info.plist */,
+				734183EE23FE2D3E004C796A /* GoogleService-Info.plist */,
 				734183DA23FE2A6B004C796A /* AppDelegate.swift */,
 				734183DC23FE2A6B004C796A /* SceneDelegate.swift */,
-				734183DE23FE2A6B004C796A /* ViewController.swift */,
-				734183E023FE2A6B004C796A /* Main.storyboard */,
+				734183F023FE3041004C796A /* Controllers */,
+				734183F423FE307C004C796A /* Services */,
+				734183F323FE3072004C796A /* Models */,
+				734183F723FE30AA004C796A /* Views */,
+				734183F623FE309F004C796A /* Supporting */,
+				734183F523FE3091004C796A /* Storyboards */,
+				734183F223FE3067004C796A /* Helpers */,
+				734183F123FE305D004C796A /* Extensions */,
 				734183E323FE2A6D004C796A /* Assets.xcassets */,
-				734183E523FE2A6D004C796A /* LaunchScreen.storyboard */,
-				734183E823FE2A6D004C796A /* Info.plist */,
 			);
 			path = PeckChat;
+			sourceTree = "<group>";
+		};
+		734183F023FE3041004C796A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				734183FA23FE33EF004C796A /* LoginViewController.swift */,
+				734184042403A77B004C796A /* CreateUsernameViewController.swift */,
+				7341840E24047C42004C796A /* FindFriendsViewController.swift */,
+				73ADF1AD240739F500B12CB0 /* FindFriendsCell.swift */,
+				7384DEA524159E43003F5A31 /* FriendRequestViewController.swift */,
+				7384DEA7241988F5003F5A31 /* FriendRequestCell.swift */,
+				737A6DCF2424028B0070B030 /* ViewFriendsCell.swift */,
+				73ADF1AF2410964700B12CB0 /* ViewFriendsController.swift */,
+				7341841024047CC0004C796A /* ChatListViewController.swift */,
+				73DCB62A2425C4380099651D /* ChatListCell.swift */,
+				73AD83AF2425C76A006C2658 /* NewChatViewController.swift */,
+				73AD83B12425C991006C2658 /* NewChatUserCell.swift */,
+				73AD83B32425CF2F006C2658 /* ChatViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		734183F123FE305D004C796A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7341840A240457FA004C796A /* Storyboard+Utility.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		734183F223FE3067004C796A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		734183F323FE3072004C796A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7341840224039F0A004C796A /* User.swift */,
+				734184122404887D004C796A /* Chat.swift */,
+				734184142404891E004C796A /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		734183F423FE307C004C796A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				734184062403B7CB004C796A /* UserService.swift */,
+				7341841624048BB7004C796A /* FriendService.swift */,
+				73418418240490E2004C796A /* FriendRequestService.swift */,
+				73DCB6282425B2990099651D /* ChatService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		734183F523FE3091004C796A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				734183E023FE2A6B004C796A /* Main.storyboard */,
+				734183E523FE2A6D004C796A /* LaunchScreen.storyboard */,
+				734183F823FE32FE004C796A /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		734183F623FE309F004C796A /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				7341840824045742004C796A /* Constants.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		734183F723FE30AA004C796A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 734183EB23FE2A6D004C796A /* Build configuration list for PBXNativeTarget "PeckChat" */;
 			buildPhases = (
+				435580A75339338C6998B314 /* [CP] Check Pods Manifest.lock */,
 				734183D323FE2A6B004C796A /* Sources */,
 				734183D423FE2A6B004C796A /* Frameworks */,
 				734183D523FE2A6B004C796A /* Resources */,
+				FF9ACC2CC530571C0A886049 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,21 +287,86 @@
 			buildActionMask = 2147483647;
 			files = (
 				734183E723FE2A6D004C796A /* LaunchScreen.storyboard in Resources */,
+				734183EF23FE2D3E004C796A /* GoogleService-Info.plist in Resources */,
 				734183E423FE2A6D004C796A /* Assets.xcassets in Resources */,
+				734183F923FE32FE004C796A /* Login.storyboard in Resources */,
 				734183E223FE2A6B004C796A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		435580A75339338C6998B314 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeckChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF9ACC2CC530571C0A886049 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeckChat/Pods-PeckChat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeckChat/Pods-PeckChat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PeckChat/Pods-PeckChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		734183D323FE2A6B004C796A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				734183DF23FE2A6B004C796A /* ViewController.swift in Sources */,
+				7341841724048BB7004C796A /* FriendService.swift in Sources */,
+				73418419240490E2004C796A /* FriendRequestService.swift in Sources */,
+				734184072403B7CB004C796A /* UserService.swift in Sources */,
+				73DCB62B2425C4380099651D /* ChatListCell.swift in Sources */,
+				734183FB23FE33EF004C796A /* LoginViewController.swift in Sources */,
+				73ADF1AE240739F500B12CB0 /* FindFriendsCell.swift in Sources */,
+				73AD83B22425C991006C2658 /* NewChatUserCell.swift in Sources */,
+				737A6DD02424028B0070B030 /* ViewFriendsCell.swift in Sources */,
+				7341841124047CC0004C796A /* ChatListViewController.swift in Sources */,
+				734184052403A77B004C796A /* CreateUsernameViewController.swift in Sources */,
+				73AD83B42425CF2F006C2658 /* ChatViewController.swift in Sources */,
 				734183DB23FE2A6B004C796A /* AppDelegate.swift in Sources */,
+				7341840324039F0A004C796A /* User.swift in Sources */,
+				73AD83B02425C76A006C2658 /* NewChatViewController.swift in Sources */,
+				734184132404887D004C796A /* Chat.swift in Sources */,
+				73ADF1B02410964700B12CB0 /* ViewFriendsController.swift in Sources */,
+				7341840F24047C42004C796A /* FindFriendsViewController.swift in Sources */,
+				73DCB6292425B2990099651D /* ChatService.swift in Sources */,
+				7384DEA624159E43003F5A31 /* FriendRequestViewController.swift in Sources */,
+				7384DEA8241988F5003F5A31 /* FriendRequestCell.swift in Sources */,
+				7341840B240457FA004C796A /* Storyboard+Utility.swift in Sources */,
+				734184152404891E004C796A /* Message.swift in Sources */,
 				734183DD23FE2A6B004C796A /* SceneDelegate.swift in Sources */,
+				7341840924045742004C796A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +508,13 @@
 		};
 		734183EC23FE2A6D004C796A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1946768BFBE271146FA5D5C0 /* Pods-PeckChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2F95YGPVCY;
 				INFOPLIST_FILE = PeckChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +528,13 @@
 		};
 		734183ED23FE2A6D004C796A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAE67EB6F28B8DAEF87FD6B /* Pods-PeckChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2F95YGPVCY;
 				INFOPLIST_FILE = PeckChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

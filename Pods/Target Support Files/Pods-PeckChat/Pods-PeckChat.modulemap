@@ -1,0 +1,6 @@
+framework module Pods_PeckChat {
+  umbrella header "Pods-PeckChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
